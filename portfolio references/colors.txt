@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.My-Portfolio-1-hex { color: #F2F2F2; }
+.My-Portfolio-2-hex { color: #C6E070; }
+.My-Portfolio-3-hex { color: #91C46C; }
+.My-Portfolio-4-hex { color: #287D7D; }
+.My-Portfolio-5-hex { color: #1C344C; }
+
+/* Color Theme Swatches in RGBA */
+.My-Portfolio-1-rgba { color: rgba(242, 242, 242, 1); }
+.My-Portfolio-2-rgba { color: rgba(198, 223, 112, 1); }
+.My-Portfolio-3-rgba { color: rgba(144, 195, 107, 1); }
+.My-Portfolio-4-rgba { color: rgba(40, 124, 124, 1); }
+.My-Portfolio-5-rgba { color: rgba(28, 52, 75, 1); }
+
+/* Color Theme Swatches in HSLA */
+.My-Portfolio-1-hsla { color: hsla(0, 0, 94, 1); }
+.My-Portfolio-2-hsla { color: hsla(73, 64, 65, 1); }
+.My-Portfolio-3-hsla { color: hsla(94, 42, 59, 1); }
+.My-Portfolio-4-hsla { color: hsla(180, 51, 32, 1); }
+.My-Portfolio-5-hsla { color: hsla(209, 46, 20, 1); }
