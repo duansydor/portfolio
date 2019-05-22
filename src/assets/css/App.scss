@@ -2,24 +2,27 @@
 Font Imports
 *******************************/
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import "variables.scss";
 body{
   height:100vh;
   width: 100%;
 }
 header{
   width: 100%;
-}
-header img{
-  max-width:200px;
-  max-height: 150px;
-}
-header .menu{
-  margin-top: -85px;
-
-}
-header .menu a{
-  padding-left: 20px;
-
+  img{
+    max-width:200px;
+    max-height: 150px;
+  }
+  .menu{
+    margin-top: -85px;
+    a{
+      padding-left: 20px;
+      color: $primary;
+    }
+    a:hover{
+      color:$primaryDark;
+    }
+  }
 }
 a{
   text-decoration: none;
@@ -29,19 +32,15 @@ Title
 *******************************/
 
 .title{
-  font-size: 36px;
+  font-size: $titles;
   font-family: 'Montserrat';
   font-weight: 600;
+  margin-bottom: 80px;
+
 
 }
-.title{
-  margin-bottom: 80px;
-}
-.info{
-  
-}
 .info p{
-  font-size: 24px;
+  font-size: $normalText;
 }
 .profilepic{
   align-self: center;
@@ -68,9 +67,8 @@ Button styles
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background:#508AF4;
+  background:$primary;
   color:white;
-  background: #508AF4;
   border-radius: 15px;
   z-index: 1;
 
@@ -82,7 +80,7 @@ Button styles
   cursor: pointer;
 }
 .btn:hover{
-  background: rgb(80,120,244);
+  background: $primaryDark;
 }
 .btn a{
   font-family:'Montserrat';
@@ -121,5 +119,42 @@ Cards projetos
   border-radius: 15px;
 
 }
+/******************************
+Sobre
+*******************************/
+.sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 600px;
+    text-align: justify;
+  h1{
+    font-size:$titles;
+  }
+  h2{
+    font-size: $normalText;
+  }
+  p{
+    font-size: $normalText;
 
+  }
+  img{
+    width:200px;
+  }
+}
+.btn{
+  width:250px;
+   height:50px;
+   font-size:$normalText;
+}
+@media (max-width: 600px){
+  .sobre{
+    flex-direction: column;
+    align-items:center;
+    width:300px;
+  img{
+    width:180px;
+  }
+}
+}
 

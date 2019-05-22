@@ -1,5 +1,4 @@
 import React from 'react';
-import './home.css';
 import profile from '../assets/img/profile.png';
 
 function Home(props){
@@ -17,7 +16,7 @@ function Home(props){
 					projetos realizados durante meu
 					curso técnico e nas horas vagas.
 					<div className="container">
-						<a className="btn" href="/projetos" >Meus Projetos</a>
+						<a className="btn" href="/#/projetos" >Meus Projetos</a>
 					</div>
 				</p>
 			</div>
