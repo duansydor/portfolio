@@ -1,12 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Card(props){
 	return(
-		<div className="card col-md-4" onClick={()=>{
-			window.location = '/projeto/'+props.nome
-		}}>
+		<Link to="single" className="card col-md-4">
 			<img src={props.prodimg}/>
-		</div>
+		</Link>
 	);
 }
 export default Card;

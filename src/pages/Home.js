@@ -1,5 +1,6 @@
 import React from 'react';
 import profile from '../assets/img/profile.png';
+import {Link} from 'react-router-dom';
 
 function Home(props){
 	return(
@@ -16,7 +17,7 @@ function Home(props){
 					projetos realizados durante meu
 					curso técnico e nas horas vagas.
 					<div className="container">
-						<a className="btn" href="/#/projetos" >Meus Projetos</a>
+						<Link className="btn" to="projetos" >Meus Projetos</Link>
 					</div>
 				</p>
 			</div>

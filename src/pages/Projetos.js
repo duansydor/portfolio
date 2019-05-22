@@ -1,14 +1,16 @@
 import React from 'react';
 import Card from '../components/Card';
-import cardimg from '../assets/img/projetos/card.jpg'
-
+import cardimg from '../assets/img/projetos/card.jpg';
+import { Link } from 'react-router-dom';
 export default class Projetos extends React.Component{
 	
 	render(props){
 		return(
 			<div className="container">
 				<div className="container cardcont">
-					<h1 className="title">Meus Projetos</h1>
+					<h1>Meus Projetos</h1>
+					<br/>
+					<br/>
 				<div className="row">
 					<Card prodimg={cardimg} nome="demo"/>
 					<Card prodimg={cardimg} nome="demo"/>
@@ -21,7 +23,7 @@ export default class Projetos extends React.Component{
 				</div>
 				</div>
 				<div className="center">
-					<a href="/" style={{width:'250px', height:'50px', fontSize:'24px'}} className="btn"  >Início</a>
+					<Link to="/" className="btn small"  >Início</Link>
 				</div>
 			</div>
 		);
