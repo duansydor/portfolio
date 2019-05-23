@@ -1,14 +1,13 @@
 import React from 'react';
 import Card from '../components/Card';
-import cardimg from '../assets/img/projetos/card.jpg';
 import { projeto1, projeto2, projeto3, projeto4, projeto5, projeto6 }  from './projetosinfo.js';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { changeProject } from '../actions';
 import {Store} from '../store';
 
+import p1icon from '../assets/img/projetos/projeto1/icon.png';
 
 
 function Projetos(){
@@ -24,7 +23,7 @@ function Projetos(){
 					<br/>
 					<br/>
 				<div className="row">
-					<Card action={()=>{clicked(projeto1)}} prodimg={projeto1.img} />
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
 					<Card action={()=>{clicked(projeto2)}} prodimg={projeto2.img} />
 					<Card action={()=>{clicked(projeto3)}} prodimg={projeto3.img} />
 				</div>

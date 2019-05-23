@@ -6,7 +6,6 @@ const initialState = {
 	resultados:'bem loko aksdjalskdj'
 }
 export const projectReducer = (state = initialState, action) => {
-	console.log(initialState);
 	switch(action.type) {
 		case 'TROCAR_PROJETO':
 			return {

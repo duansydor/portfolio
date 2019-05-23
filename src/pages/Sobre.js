@@ -16,7 +16,7 @@ function Sobre(props){
 				<div className="sobre">
 					<div className="">
 						<center>
-						<img src={profile}></img>
+						<img src={profile} alt=""></img>
 						</center>
 					</div>
 					<div className="">

@@ -1,11 +1,8 @@
 import React from 'react';
-import card from '../assets/img/projetos/card.jpg';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { changeProject } from '../actions';
-import {Store} from '../store';
+
 
 
 
@@ -19,10 +16,10 @@ class Single extends React.Component{
 					<h1>	
 						{ projectName }
 					</h1>
-					{imgSrc}
+					
 				</center>
 				<div className="pimage">
-					<img className="projimg" src={card}/>
+					<img className="projimg" src={imgSrc} alt={projectName}/>
 				</div>
 				<br/>
 				<br/>
@@ -49,7 +46,7 @@ class Single extends React.Component{
 				</div>
 
 				<div className="center">
-					<a href="www.google.com.br" target="_blank" className="btn small">Ver no github</a>
+					<a href="www.google.com.br" target="_blank" rel="noopener noreferrer" className="btn small">Live Preview</a>
 				</div>
 				<br/>
 				<br/>
@@ -70,6 +67,4 @@ const mapStateToProps = store => ({
 	resultados:store.projectState.resultados
 });
 
-const mapDispatchToProps = dispatch =>
-  bindActionCreators({changeProject  }, dispatch);
 export default connect(mapStateToProps)(Single);
