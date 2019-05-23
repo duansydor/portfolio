@@ -9,6 +9,8 @@ import Contato from './pages/Contato';
 import Sobre from './pages/Sobre';
 import Single from './pages/Single';
 
+
+
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 function App() {

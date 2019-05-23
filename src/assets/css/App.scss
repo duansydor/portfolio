@@ -222,15 +222,20 @@ Contato
   .links{
     flex-direction: column;
     img{
-      width: 100px;
-      height: 100px;
+      margin-bottom: $spacing;
+      width: 150px;
+      height: 150px;
     }
   }
   .links.otherways{
   flex-direction: column;
   justify-content: space-around;
   span{
-   margin-top: 10px;
+    font-size: 18px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
   }
 }
 }

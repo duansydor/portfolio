@@ -16,9 +16,7 @@ function Home(props){
 					esse é meu portfolio com alguns 
 					projetos realizados durante meu
 					curso técnico e nas horas vagas.
-					<div className="container">
-						<Link className="btn" to="projetos" >Meus Projetos</Link>
-					</div>
+					<Link className="btn" to="projetos" >Meus Projetos</Link>
 				</p>
 			</div>
 			

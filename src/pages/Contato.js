@@ -19,15 +19,6 @@ function Contato(props){
 					<a href="https://github.com/duansydor/" target="_blank"><img src={git} alt=""/></a>
 				</div>
 			</center>
-			<center>
-				<h2>Ou se preferir</h2>
-			</center>
-			<center>
-				<div className="links otherways">
-					<span><img src={email}/>josiasduan@gmail.com</span>
-					<span><img src={whatsapp}/>+55 (42) 98409-7698</span>
-				</div>
-			</center>
 			<div className="center">
 				<Link to="/" className="btn small">Início</Link>
 			</div>

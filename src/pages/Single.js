@@ -2,17 +2,24 @@ import React from 'react';
 import card from '../assets/img/projetos/card.jpg';
 import { Link } from 'react-router-dom';
 
-export default class Single extends React.Component{
-	states = {
-		
-	}
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { changeProject } from '../actions';
+import {Store} from '../store';
+
+
+
+class Single extends React.Component{
+
 	render(){
+		let { projectName,imgSrc,objetivo, desafios, resultados } = this.props;
 		return(
 			<div className="container">
 				<center>
 					<h1>	
-						Nome do projeto
+						{ projectName }
 					</h1>
+					{imgSrc}
 				</center>
 				<div className="pimage">
 					<img className="projimg" src={card}/>
@@ -23,16 +30,21 @@ export default class Single extends React.Component{
 				<div>
 					<h2>Objetivo</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu libero hendrerit, rutrum orci a, pulvinar sapien.
-					 Nullam pulvinar ipsum libero, cursus fermentum est accumsan id.
+						{ objetivo }
 					</p>
 				</div>
 
 				<div>
-					<h2>Objetivo</h2>
+					<h2>Desafios</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu libero hendrerit, rutrum orci a, pulvinar sapien.
-					 Nullam pulvinar ipsum libero, cursus fermentum est accumsan id.
+						{ desafios }
+					</p>
+				</div>
+
+				<div>
+					<h2>Resultados</h2>
+					<p>
+						{ resultados }
 					</p>
 				</div>
 
@@ -50,3 +62,14 @@ export default class Single extends React.Component{
 		);
 	}
 }
+const mapStateToProps = store => ({
+	projectName:store.projectState.projectName,
+	imgSrc:store.projectState.imgSrc,
+	objetivo:store.projectState.objetivo,
+	desafios:store.projectState.desafios,
+	resultados:store.projectState.resultados
+});
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({changeProject  }, dispatch);
+export default connect(mapStateToProps)(Single);
