@@ -11,7 +11,7 @@ class Single extends React.Component{
 	render(){
 		let { projectName,imgSrc,objetivo, desafios, resultados } = this.props;
 		return(
-			<div className="container">
+			<div className="container single">
 				<center>
 					<h1>	
 						{ projectName }
