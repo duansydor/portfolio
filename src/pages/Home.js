@@ -13,9 +13,9 @@ function Home(props){
 				<p className="col-md-4">
 					Olá, me chamo Duan, moro em
 					Guarapuava - PR e tenho 19 anos.
-					esse é meu portfolio com alguns 
-					projetos realizados durante meu
-					curso técnico e nas horas vagas.
+					Aqui você encontrará alguns exemplos de projetos 
+					feitos por mim. Caso tenha alguma duvida entre em contato.
+                    
 					<Link className="btn" to="projetos" >Meus Projetos</Link>
 				</p>
 			</div>
@@ -23,4 +23,4 @@ function Home(props){
 		</div>
 	);
 }
-export default Home
+export default Home;

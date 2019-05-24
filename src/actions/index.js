@@ -1,8 +1,9 @@
-export const changeProject = (name,img,objective, challenge, results) => ({
+export const changeProject = (name,img,objective, challenge, results, previewp) => ({
 	type:'TROCAR_PROJETO',
 	projectName:name,
 	imgSrc:img,
 	objetivo:objective,
 	desafios:challenge,
-	resultados:results
+	resultados:results,
+	previewp:previewp
 });

@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 class Single extends React.Component{
 
 	render(){
-		let { projectName,imgSrc,objetivo, desafios, resultados } = this.props;
+		let { projectName,imgSrc,objetivo, desafios, resultados, previewp } = this.props;
 		return(
 			<div className="container single">
 				<center>
@@ -46,7 +46,7 @@ class Single extends React.Component{
 				</div>
 
 				<div className="center">
-					<a href="www.google.com.br" target="_blank" rel="noopener noreferrer" className="btn small">Live Preview</a>
+					<a href={previewp} target="_blank" rel="noopener noreferrer" className="btn small">Live Preview</a>
 				</div>
 				<br/>
 				<br/>
@@ -64,7 +64,8 @@ const mapStateToProps = store => ({
 	imgSrc:store.projectState.imgSrc,
 	objetivo:store.projectState.objetivo,
 	desafios:store.projectState.desafios,
-	resultados:store.projectState.resultados
+	resultados:store.projectState.resultados,
+	previewp:store.projectState.previewp
 });
 
 export default connect(mapStateToProps)(Single);

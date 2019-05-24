@@ -12,9 +12,9 @@ import p1icon from '../assets/img/projetos/projeto1/icon.png';
 
 function Projetos(){
 	function clicked(info){
-		console.log(info.nome)
-		let {nome, img, objetivo, desafios, resultados} = info;
-		Store.dispatch(changeProject(nome,img,objetivo, desafios,resultados));
+		console.log(info.previewp)
+		let {nome, img, objetivo, desafios, resultados, previewp} = info;
+		Store.dispatch(changeProject(nome,img,objetivo, desafios,resultados, previewp));
 	}
 		return(
 			<div className="container">
@@ -24,13 +24,13 @@ function Projetos(){
 					<br/>
 				<div className="row">
 					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
-					<Card action={()=>{clicked(projeto2)}} prodimg={projeto2.img} />
-					<Card action={()=>{clicked(projeto3)}} prodimg={projeto3.img} />
+					{/* <Card action={()=>{clicked(projeto2)}} prodimg={projeto2.img} /> */}
+					{/* <Card action={()=>{clicked(projeto3)}} prodimg={projeto3.img} /> */}
 				</div>
 				<div className="row">
-					<Card action={()=>{clicked(projeto4)}} prodimg={projeto4.img} />
+					{/* <Card action={()=>{clicked(projeto4)}} prodimg={projeto4.img} />
 					<Card action={()=>{clicked(projeto5)}} prodimg={projeto5.img} />
-					<Card action={()=>{clicked(projeto6)}} prodimg={projeto6.img} />
+					<Card action={()=>{clicked(projeto6)}} prodimg={projeto6.img} /> */}
 				</div>
 				</div>
 				<div className="center">
