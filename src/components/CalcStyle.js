@@ -17,11 +17,25 @@ class CalcStyle extends React.Component{
         let { withCss } = this.props;
         return(
             <div className="container">
-                <div>
-                    <input type="checkbox" id="htmlCss" defaultChecked={withCss} onChange={()=>this.changeCSS(withCss)} />HTML + CSS
-                    <input type="checkbox" id="htmlJs"/>HTML + CSS + JavaScript
+                <div className="propertiesCont">
+                    <div className="changeProperties">
+                        <div className="input">
+                            <input type="checkbox" id="htmlCss" defaultChecked={withCss} onChange={()=>this.changeCSS(withCss)} />
+                            <label for="htmlCss">
+                                HTML + CSS
+                            </label>
+                        </div>
+                        <div>
+
+                        </div>
+                        <div className="input">
+                            <input type="checkbox" id="htmlJs"/>
+                            <label for="htmlJs"> 
+                                HTML + CSS + JavaScript
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                {withCss?'aba':'a'}
             </div>
         );
     }  

@@ -261,6 +261,40 @@ Image projetos singlepage
 /******************************
 Calculator
 *******************************/
+.propertiesCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.changeProperties{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .input{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    input[type="checkbox"]{
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+     
+
+    }
+    label{
+      background:$primary;
+      color:white;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+  
+}
+
+
+
 .calcTitle{
   font-weight: 400;
 }
@@ -269,6 +303,7 @@ Calculator
 }
 .input.true{
   input{
+    outline: none;
     width:239px;
     transition: .4s;
     border:none;
@@ -285,16 +320,23 @@ Calculator
     display: flex;
     flex-direction: column;
     input[type="button"]{
-      transition:.3s;
+      outline: none;
+      transition:.2s;
       border-radius: 15px;
-      border:none;
+      border: 1px solid black;
+
       padding: 10px;
       width: 50px;
       margin:5px;
-      background:lightblue;
+      background:$primary;
+      color: white;
+      
       &:hover{
-        background:rgb(87, 117, 172);
+        background:$primaryDark;
         color:white;
+      }
+      &:active{
+        border:none;
       }
     }
   }
