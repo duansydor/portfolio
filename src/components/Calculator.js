@@ -12,41 +12,47 @@ function Calculator(props){
     let { withCss } = props;
     return(
         <div className='container'>
+            <center>
             <CalcStyle/>
-            {withCss?"Com Estilo":"Sem Estilo"}
-            <div>
-                <input type="text"/>
-            </div>
-            <div>
-                <div>
-                    <input type="button" value="7"/>
-                    <input type="button" value="8"/>
-                    <input type="button" value="9"/>
-                    <input type="button" value="*"/>
+            <br/>
+            <br/>
+            <div className={`calculator ${withCss}`}>
+                <h1 className={`calcTitle ${withCss}`}>{withCss?"Com Estilo":"Sem Estilo"}</h1>
+                <div className={`input ${withCss}`}>
+                    <input placeholder="Calculadora" type="text"/>
                 </div>
+                <div className={`btncontainer ${withCss}`}>
+                    <div>
+                        <input type="button" value="7"/>
+                        <input type="button" value="8"/>
+                        <input type="button" value="9"/>
+                        <input type="button" value="*"/>
+                    </div>
 
-                <div>
-                    <input type="button" value="4"/>
-                    <input type="button" value="5"/>
-                    <input type="button" value="6"/>
-                    <input type="button" value="/"/>
+                    <div >
+                        <input type="button" value="4"/>
+                        <input type="button" value="5"/>
+                        <input type="button" value="6"/>
+                        <input type="button" value="/"/>
 
+                    </div>
+
+                    <div>
+                        <input type="button" value="1"/>
+                        <input type="button" value="2"/>
+                        <input type="button" value="3"/>
+                        <input type="button" value="-"/>
+                    </div>
+
+                    <div>
+                        <input type="button" value="0"/>
+                        <input type="button" value=","/>
+                        <input type="button" value="="/>
+                        <input type="button" value="+"/>
+                    </div>
                 </div>
-
-                <div>
-                    <input type="button" value="1"/>
-                    <input type="button" value="2"/>
-                    <input type="button" value="3"/>
-                    <input type="button" value="-"/>
                 </div>
-
-                <div>
-                    <input type="button" value="0"/>
-                    <input type="button" value=","/>
-                    <input type="button" value="="/>
-                    <input type="button" value="+"/>
-                </div>
-            </div>
+            </center>
         </div>
     );
 }
