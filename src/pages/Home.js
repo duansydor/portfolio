@@ -1,5 +1,6 @@
 import React from 'react';
 import profile from '../assets/img/profile.png';
+import Calculator from '../components/Calculator.js';
 import {Link} from 'react-router-dom';
 
 function Home(props){
@@ -19,7 +20,22 @@ function Home(props){
 					<Link className="btn" to="projetos" >Meus Projetos</Link>
 				</p>
 			</div>
-			
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<h1 className="title home">Minhas Habilidades</h1>
+			<Calculator/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
 		</div>
 	);
 }
