@@ -47,6 +47,21 @@ Title
 }
 .info p{
   font-size: $normalText;
+  margin-top: 60px;
+  width:700px;
+}
+@media(max-width: 680px){
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .info p{
+    width:400px;
+
+  }
+  
 }
 .profilepic{
   align-self: center;
@@ -119,35 +134,27 @@ Button styles
 Cards projetos
 *******************************/
 .cardcont{
-  margin-left: 110px;
   width: 100%;
+  display: flex;
 }
 .card{
   cursor: pointer;
-  width: 300px;
-  height:200px;
+  width: 400px;
   margin-bottom: 40px;
 
 
+}
+.cardrow{
+  display: flex;
+  width: 100%;
+  height: 200px;
 }
 .card img{
   height: 100%;
   width: 100%;
-  margin-bottom: 40px;
   border-radius: 15px;
 }
-@media (max-width: 720px){
-    .cardcont{
-      margin-left: 0px;
-      width: 90%;
-    }
-    .card img{
-      height: 100%;
-      width: 100%;
-      margin-bottom: 40px;
-      border-radius: 15px;
-    }
-}
+
 /******************************
 Sobre
 *******************************/
@@ -261,19 +268,26 @@ Image projetos singlepage
 /******************************
 Calculator
 *******************************/
+.calcCont{
+  align-content: center;
+}
+
 .propertiesCont{
-  display: flex;
   align-items: center;
-  justify-content: center;
 }
 .changeProperties{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   .input{
-    margin: 10px;
+    margin-bottom: 10px;
     display: flex;
+    width:400px;
     align-items: center;
+    border:1px solid $primary;
+    border-radius: 10px;
+    padding: 10px;
+
+
     input[type="checkbox"]{
       width: 30px;
       height: 30px;
@@ -282,11 +296,12 @@ Calculator
 
     }
     label{
-      background:$primary;
-      color:white;
+      cursor: pointer;
+      color:$primary;
       font-size: 18px;
       font-weight: 600;
       padding: 10px;
+
       border-radius: 10px;
     }
   }
@@ -294,7 +309,17 @@ Calculator
 }
 
 
+.calculator{
+  border:1px solid darkgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 400px;
 
+}
 .calcTitle{
   font-weight: 400;
 }
@@ -304,20 +329,18 @@ Calculator
 .input.true{
   input{
     outline: none;
-    width: 270px;
+    width: 260px;
     transition: .4s;
     border:none;
     border-radius: 15px;
     background:lightgrey;
     padding: 10px;
-    margin-bottom: 10px;
-  }
-  
+  } 
 }
 .btncontainer.true{
+  width:260px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   input[type="submit"]{
     outline: none;
@@ -371,5 +394,42 @@ Calculator
         border:none;
       }
     }
+  }
+}
+@media(max-width: 680px){
+  .calcCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .changeProperties{
+    display: flex;
+    flex-direction: column;
+    .input{
+      margin-bottom: 10px;
+      display: flex;
+      width:500px;
+      align-items: center;
+      border:1px solid $primary;
+      border-radius: 10px;
+      padding: 10px;
+    }
+  }
+}
+/******************************
+Footer
+*******************************/
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:72px;
+  color: $primaryDark;
+  width:100%;
+  
+  span{
+    margin:-5px;
   }
 }

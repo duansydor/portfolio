@@ -1,6 +1,6 @@
 const initialState = {
     withCss:false,
-    withJS:false,
+    withJs:false,
 }
 export const calculatorReducer = (state = initialState,action) => {
     switch(action.type){
@@ -12,7 +12,7 @@ export const calculatorReducer = (state = initialState,action) => {
         case "CHANGE_JS":
             return{
                 ...state,
-                withJS:true,
+                withJs:action.withJs,
             }
         default:
             return state;

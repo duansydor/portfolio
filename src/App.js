@@ -2,7 +2,6 @@ import React from 'react';
 import './assets/css/bootstrapgrid.css';
 import './assets/css/App.scss';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import Projetos from './pages/Projetos';
 import Contato from './pages/Contato';
@@ -15,7 +14,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-  	<div className="container">
+  	<div>
 		  	<HashRouter>
   				<Header/>
 			    <Switch>
@@ -26,7 +25,6 @@ function App() {
 			    	<Route path='/single' component={Single}/>
 			    </Switch>
 			</HashRouter>
-		<Footer/>
 	</div>
   );
 }

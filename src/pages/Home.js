@@ -3,6 +3,7 @@ import React from 'react';
 import profile from '../assets/img/profile.png';
 import Calculator from '../components/Calculator.js';
 import {Link} from 'react-router-dom';
+import Footer from '../components/Footer';
 
 function Home(props){
 	return(
@@ -12,7 +13,7 @@ function Home(props){
 				<center>
 					<img className="col-md-8 profilepic" src={profile} alt="profile pic"/>
 				</center>
-				<p className="col-md-4">
+				<p className="col-md-4 text">
 					Olá, me chamo Duan, moro em
 					Guarapuava - PR e tenho 19 anos.
 					Aqui você encontrará alguns exemplos de projetos 
@@ -28,7 +29,8 @@ function Home(props){
 			<br/>
 			<br/>
 			<br/>
-			<h1 className="title home">Minhas Habilidades</h1>
+			<h1 className="title home">Algumas Habilidades</h1>
+			<h2 style={{fontWeight:'400',fontSize:'20px',color:'darkred'}}>Altere as propriedades da calculadora usando o checkbox</h2>
 			<Calculator/>
 			<br/>
 			<br/>
@@ -37,6 +39,7 @@ function Home(props){
 			<br/>
 			<br/>
 			<br/>
+			<Footer/>
 		</div>
 	);
 }

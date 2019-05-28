@@ -11,7 +11,7 @@ export const changeCss = (statusCss) => ({
 	type: "CHANGE_CSS",
 	withCss:statusCss
 });
-export const changeJS = (statusJS) => ({
+export const changeJs = (statusJS) => ({
 	type: "CHANGE_JS",
-	addJS:!statusJS
+	withJs:statusJS
 })
