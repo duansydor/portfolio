@@ -1,5 +1,7 @@
 import React from 'react';
 import profile from '../assets/img/profile.png';
+import {Link} from 'react-router-dom';
+
 function Sobre(props){
 	return(
 		<div className="container">
@@ -40,7 +42,7 @@ function Sobre(props){
 
 
 			<div className="center row">
-				<a href="/" className="btn">Ínicio</a>
+				<Link to="/" className="btn">Ínicio</Link>
 			</div>
 		</div>
 	);

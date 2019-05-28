@@ -48,10 +48,6 @@ class Single extends React.Component{
 				<div className="center">
 					<a href={previewp} target="_blank" rel="noopener noreferrer" className="btn small">Live Preview</a>
 				</div>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
 				<div className="center">
 					<Link to="/projetos" className='btn secondary'>Voltar</Link>
 				</div>
