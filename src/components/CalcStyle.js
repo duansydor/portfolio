@@ -21,7 +21,7 @@ class CalcStyle extends React.Component{
                     <div className="changeProperties">
                         <div className="input">
                             <input type="checkbox" id="htmlCss" defaultChecked={withCss} onChange={()=>this.changeCSS(withCss)} />
-                            <label for="htmlCss">
+                            <label htmlFor="htmlCss">
                                 HTML + CSS
                             </label>
                         </div>
@@ -30,7 +30,7 @@ class CalcStyle extends React.Component{
                         </div>
                         <div className="input">
                             <input type="checkbox" id="htmlJs"/>
-                            <label for="htmlJs"> 
+                            <label htmlFor="htmlJs"> 
                                 HTML + CSS + JavaScript
                             </label>
                         </div>

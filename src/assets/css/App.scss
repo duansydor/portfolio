@@ -304,21 +304,53 @@ Calculator
 .input.true{
   input{
     outline: none;
-    width:239px;
+    width: 270px;
     transition: .4s;
     border:none;
     border-radius: 15px;
     background:lightgrey;
     padding: 10px;
+    margin-bottom: 10px;
   }
   
 }
 .btncontainer.true{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  input[type="submit"]{
+    outline: none;
+      transition:.2s;
+      border-radius: 15px;
+      border: 1px solid black;
+
+      padding: 10px;
+      width: 130px;
+      margin:5px;
+      background:$primary;
+      color: white;
+  }
+  .delete{
+    input[type="reset"]{
+      padding: 10px;
+      outline: none;
+      transition:.2s;
+      border-radius: 15px;
+      border: 1px solid black;
+
+      padding: 10px;
+      width: 270px;
+      margin:5px;
+      background:$primary;
+      color: white;
+    }
+  }
   div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    
     input[type="button"]{
       outline: none;
       transition:.2s;
@@ -326,7 +358,7 @@ Calculator
       border: 1px solid black;
 
       padding: 10px;
-      width: 50px;
+      width: 60px;
       margin:5px;
       background:$primary;
       color: white;
