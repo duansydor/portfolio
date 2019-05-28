@@ -18,17 +18,12 @@ function Home(props){
 					Guarapuava - PR e tenho 19 anos.
 					Aqui você encontrará alguns exemplos de projetos 
 					feitos por mim. Caso tenha alguma duvida entre em contato.
-                    
+                    <br/>
+                    <br/>
+                    <br/>
 					<Link className="btn" to="projetos" >Meus Projetos</Link>
 				</p>
 			</div>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
 			<h1 className="title home">Algumas Habilidades</h1>
 			<h2 style={{fontWeight:'400',fontSize:'20px',color:'darkred'}}>Altere as propriedades da calculadora usando o checkbox</h2>
 			<Calculator/>

@@ -58,7 +58,8 @@ Title
 
   }
   .info p{
-    width:400px;
+    width:320px;
+    text-align: justify;
 
   }
   
@@ -83,7 +84,6 @@ Title
 Button styles
 *******************************/
 .btn{
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -93,8 +93,7 @@ Button styles
   border-radius: 15px;
   z-index: 1;
 
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   width: 236.02px;
   height: 69.5px;
   transition: .2s;
@@ -139,7 +138,7 @@ Cards projetos
 }
 .card{
   cursor: pointer;
-  width: 400px;
+  width: 300px;
   margin-bottom: 40px;
 
 
@@ -199,7 +198,7 @@ Contato
 *******************************/
 
 .links{
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   margin-top: 90px;
   width: 70%;
   display: flex;
@@ -281,7 +280,7 @@ Calculator
   .input{
     margin-bottom: 10px;
     display: flex;
-    width:350px;
+    width:300px;
     align-items: center;
     border:1px solid $primary;
     border-radius: 10px;
@@ -317,7 +316,7 @@ Calculator
     align-items: center;
     justify-content: center;
     padding: 10px;
-    width: 350px;
+    width: 300px;
 
 }
 .calcTitle{
