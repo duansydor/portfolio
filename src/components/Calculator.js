@@ -103,14 +103,14 @@ class Calculator extends React.Component{
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="7"/>
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="8"/>
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="9"/>
-                                <input type="button" onClick={(e) => { this.numberTyping(e) }} value="*"/>
+                                <input className="operation" type="button" onClick={(e) => { this.numberTyping(e) }} value="X"/>
                             </div>
         
                             <div >
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="4"/>
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="5"/>
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="6"/>
-                                <input type="button" onClick={(e) => { this.numberTyping(e) }} value="/"/>
+                                <input className="operation" type="button" onClick={(e) => { this.numberTyping(e) }} value="/"/>
         
                             </div>
         
@@ -118,13 +118,13 @@ class Calculator extends React.Component{
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="1"/>
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="2"/>
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="3"/>
-                                <input type="button" onClick={(e) => { this.numberTyping(e) }} value="-"/>
+                                <input className="operation" type="button" onClick={(e) => { this.numberTyping(e) }} value="-"/>
                             </div>
         
                             <div>
                                 <input type="button" onClick={(e) => { this.numberTyping(e) }} value="0"/>
-                                <input type="button" onClick={(e) => { this.numberTyping(e) }} value="="/>
-                                <input type="submit" onClick={(e) => { this.numberTyping(e) }} value="+"/>
+                                <input className="operation" type="button" onClick={(e) => { this.numberTyping(e) }} value="="/>
+                                <input className="operation" type="submit" onClick={(e) => { this.numberTyping(e) }} value="+"/>
                             </div>
                         </div>
                     </div>

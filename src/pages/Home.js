@@ -16,8 +16,8 @@ function Home(props){
 				<p className="col-md-4 text">
 					Olá, me chamo Duan, moro em
 					Guarapuava - PR e tenho 19 anos.
-					Aqui você encontrará alguns exemplos de projetos 
-					feitos por mim. Caso tenha alguma duvida entre em contato.
+					Aqui você encontrará alguns exemplos do que eu sei fazer.
+					 Caso tenha alguma duvida entre em contato.
                     <br/>
                     <br/>
                     <br/>

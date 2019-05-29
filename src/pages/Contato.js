@@ -17,7 +17,7 @@ function Contato(props){
 					<a href="https://github.com/duansydor/" target="_blank" rel="noopener noreferrer"><img src={git} alt=""/></a>
 				</div>
 			</center>
-			<div className="center">
+			<div  style={{display:'flex',justifyContent:'center', width:'100%'}}>
 				<Link to="/" className="btn small">Início</Link>
 			</div>
 		</div>

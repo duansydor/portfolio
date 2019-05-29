@@ -59,7 +59,7 @@ class Single extends React.Component{
 					</div>
 				</div>
 
-				<div style={{display:'flex',justifyContent:'center', width:'100%'}}>
+				<div style={{display:'flex',justifyContent:'center', width:'100%', marginTop: '80px'}}>
 					<a href={previewp} target="_blank" rel="noopener noreferrer" className="btn small">Live Preview</a>
 				</div>
 				<div style={{display:'flex',justifyContent:'center', width:'100%'}}>
