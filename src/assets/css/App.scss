@@ -135,16 +135,24 @@ Cards projetos
 .cardcont{
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 80px;
+
+  align-items: center;
 }
 .card{
   cursor: pointer;
   width: 300px;
-  margin-bottom: 40px;
-
+  margin-bottom: 80px;
 
 }
 .cardrow{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 60px;
   width: 100%;
   height: 200px;
 }
@@ -152,6 +160,14 @@ Cards projetos
   height: 100%;
   width: 100%;
   border-radius: 15px;
+}
+@media (max-width:800px){
+  .cardrow{
+    flex-direction: column;
+  }
+  .cardcont{
+    flex-direction: column;
+  }
 }
 
 /******************************
@@ -430,5 +446,22 @@ footer{
   
   span{
     margin:-5px;
+  }
+}
+
+// abilities
+.abilityContainer{
+  display:flex;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width:800px){
+  .abilityContainer{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
   }
 }

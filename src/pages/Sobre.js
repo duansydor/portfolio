@@ -1,5 +1,7 @@
 import React from 'react';
 import profile from '../assets/img/profile.png';
+import {Abilities} from '../components/Abilities.js';
+
 import {Link} from 'react-router-dom';
 
 function Sobre(props){
@@ -13,37 +15,33 @@ function Sobre(props){
 			</div>
 
 
-			<center>
-			<div>
-				<div className="sobre">
-					<div className="">
-						<center>
-						<img src={profile} alt=""></img>
-						</center>
-					</div>
-					<div className="">
-						<h2>Cursos</h2>
-						<p>Técnico em Informática</p>
-						<h2>Linguagens</h2>
-						<p>
-							Java;<br/>
-							Javascript;<br/>
-							Php.
-						</p>
+				<div>
+					<div>
+						<h2>Tecnologias</h2>
+						<div className="abilityContainer"> 
+							<Abilities name="Javascript" percentage={80}/>
+							<Abilities name="Css" percentage={80}/>
+							<Abilities name="Php" percentage={60}/>
+							
+						</div>
+						<h2>UI/UX</h2>
+						<div className="abilityContainer"> 
+							<Abilities name="Figma" percentage={60}/>		
+							<Abilities name="Photoshop" percentage={70}/>		
+							<Abilities name="Gimp" percentage={70}/>		
+						</div>
+						<h2>Linguas</h2>
+						<div className="abilityContainer"> 
+							<Abilities name="Inglês" percentage={80}/>		
+						</div>
 					</div>
 				</div>
-			</div>
-			</center>
-
-
-
-
-
-
-
-			<div className="center row">
-				<Link to="/" className="btn">Ínicio</Link>
-			</div>
+				<br/>
+				<br/>
+				<br/>
+				<div className="center row">
+					<Link to="/" className="btn">Ínicio</Link>
+				</div>
 		</div>
 	);
 }

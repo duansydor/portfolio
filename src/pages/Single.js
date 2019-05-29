@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import {Abilities} from '../components/Abilities.js';
 import { connect } from 'react-redux';
 
 
@@ -8,8 +8,8 @@ import { connect } from 'react-redux';
 
 class Single extends React.Component{
 
-	render(){
-		let { projectName,imgSrc,objetivo, desafios, resultados, previewp } = this.props;
+	render(props){
+		let { projectName,imgSrc,objetivo, desafios, resultados, previewp, used } = this.props;
 		return(
 			<div className="container single">
 				<center>
@@ -44,7 +44,20 @@ class Single extends React.Component{
 						{ resultados }
 					</p>
 				</div>
-
+				<div>
+					<h2>Foi usado</h2>
+					<div className="abilityContainer">
+						{
+							used.map((item) => {
+								return(
+									<div key={item.id}>
+										<Abilities name={item.name} percentage={item.percentage}/>
+									</div>
+								);
+							})
+						}
+					</div>
+				</div>
 				<div className="center">
 					<a href={previewp} target="_blank" rel="noopener noreferrer" className="btn small">Live Preview</a>
 				</div>
@@ -61,7 +74,8 @@ const mapStateToProps = store => ({
 	objetivo:store.projectState.objetivo,
 	desafios:store.projectState.desafios,
 	resultados:store.projectState.resultados,
-	previewp:store.projectState.previewp
+	previewp:store.projectState.previewp,
+	used:store.projectState.used
 });
 
 export default connect(mapStateToProps)(Single);

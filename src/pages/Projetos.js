@@ -13,28 +13,40 @@ import p1icon from '../assets/img/projetos/projeto1/icon.png';
 function Projetos(){
 	function clicked(info){
 		console.log(info.previewp)
-		let {nome, img, objetivo, desafios, resultados, previewp} = info;
-		Store.dispatch(changeProject(nome,img,objetivo, desafios,resultados, previewp));
+		let {nome, img, objetivo, desafios, resultados, previewp, used} = info;
+		Store.dispatch(changeProject(nome,img,objetivo, desafios,resultados, previewp, used));
 	}
 		return(
 			<div className="container">
 				<h1>Meus Projetos</h1>
-				<div className="cardcont">
-					<br/>
-					<br/>
-				<div classNamwee="cardrow">
+			
+				<div className="cardrow">
 					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
-					{/* <Card action={()=>{clicked(projeto2)}} prodimg={projeto2.img} /> */}
-					{/* <Card action={()=>{clicked(projeto3)}} prodimg={projeto3.img} /> */}
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
+					{/* <Card action={()=>{clicked(projeto2)}} prodimg={projeto2.img}/>
+					<Card action={()=>{clicked(projeto3)}} prodimg={projeto3.img} /> */}
 				</div>
 				<div className="cardrow">
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
 					{/* <Card action={()=>{clicked(projeto4)}} prodimg={projeto4.img} />
 					<Card action={()=>{clicked(projeto5)}} prodimg={projeto5.img} />
 					<Card action={()=>{clicked(projeto6)}} prodimg={projeto6.img} /> */}
 				</div>
+				<div className="cardrow">
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
+					<Card action={()=>{clicked(projeto1)}} prodimg={p1icon} />
+					{/* <Card action={()=>{clicked(projeto4)}} prodimg={projeto4.img} />
+					<Card action={()=>{clicked(projeto5)}} prodimg={projeto5.img} />
+					<Card action={()=>{clicked(projeto6)}} prodimg={projeto6.img} /> */}
 				</div>
-				<div className="center">
-					<Link to="/" className="btn small"  >Início</Link>
+				
+
+				<div className="center row">
+					<Link to="/" className="btn"  >Início</Link>
 				</div>
 			</div>
 		);
