@@ -58,10 +58,11 @@ class Single extends React.Component{
 						}
 					</div>
 				</div>
-				<div className="center">
+
+				<div style={{display:'flex',justifyContent:'center', width:'100%'}}>
 					<a href={previewp} target="_blank" rel="noopener noreferrer" className="btn small">Live Preview</a>
 				</div>
-				<div className="center">
+				<div style={{display:'flex',justifyContent:'center', width:'100%'}}>
 					<Link to="/projetos" className='btn secondary'>Voltar</Link>
 				</div>
 			</div>

@@ -135,7 +135,8 @@ Cards projetos
 .cardcont{
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 80px;
 
