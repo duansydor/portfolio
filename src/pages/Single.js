@@ -8,8 +8,8 @@ import { connect } from 'react-redux';
 
 class Single extends React.Component{
 
-	render(props){
-		let { projectName,imgSrc,objetivo, desafios, resultados, previewp, used } = this.props;
+	render(){
+		let { projectName,imgSrc,objetivo, resultados, previewp, used } = this.props;
 		return(
 			<div className="container single">
 				<center>
@@ -26,23 +26,24 @@ class Single extends React.Component{
 
 				<div>
 					<h2>Objetivo</h2>
-					<p>
-						{ objetivo }
-					</p>
-				</div>
-
-				<div>
-					<h2>Desafios</h2>
-					<p>
-						{ desafios }
-					</p>
+					<ul style={{fontSize:'18px', width:'400px'}}>
+						{ objetivo.map((item) => {
+							return(
+								<li key={item}>{item}</li>
+							);
+						}) }
+					</ul>
 				</div>
 
 				<div>
 					<h2>Resultados</h2>
-					<p>
-						{ resultados }
-					</p>
+					<ul style={{fontSize:'18px', width:'400px'}}>
+					{ resultados.map((results) => {
+							return(
+								<li key={results}>{results}</li>
+							);
+						}) }
+					</ul>
 				</div>
 				<div>
 					<h2>Foi usado</h2>
@@ -73,7 +74,6 @@ const mapStateToProps = store => ({
 	projectName:store.projectState.projectName,
 	imgSrc:store.projectState.imgSrc,
 	objetivo:store.projectState.objetivo,
-	desafios:store.projectState.desafios,
 	resultados:store.projectState.resultados,
 	previewp:store.projectState.previewp,
 	used:store.projectState.used

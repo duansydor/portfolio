@@ -13,8 +13,8 @@ import p1icon from '../assets/img/projetos/projeto1/icon.png';
 function Projetos(){
 	function clicked(info){
 		console.log(info.previewp)
-		let {nome, img, objetivo, desafios, resultados, previewp, used} = info;
-		Store.dispatch(changeProject(nome,img,objetivo, desafios,resultados, previewp, used));
+		let {nome, img, objetivo, resultados, previewp, used} = info;
+		Store.dispatch(changeProject(nome,img,objetivo, resultados, previewp, used));
 	}
 		return(
 			<div className="container">
