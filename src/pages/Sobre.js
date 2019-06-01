@@ -9,13 +9,20 @@ function Sobre(props){
 		<div className="container">
 			<div className="row">
 				<center>
-					<h1>Algumas Informações</h1>
+					<h1>Informações</h1>
 				</center>
 				<br/>
 			</div>
 
 
 				<div>
+					<div>
+						<h2>Cursos</h2>
+						<ul style={{fontSize:'18px'}}>
+							<li>Técnico em informática - Colégio Estadual Ana Vanda Bassara - 2018 à 2019;</li>
+							<li>Informática administrativa - UNIP polo Guarapuava - 2017/2018.</li>
+						</ul>
+					</div>
 					<div>
 						<h2>Tecnologias</h2>
 						<div className="abilityContainer"> 
